@@ -311,11 +311,11 @@ const ListDetails = (props) => {
 			</li>
 			<li className="list-group-item text-uppercase ftw-600">
 				<small className="text-dark ftw-600 ls-8">Paid: </small>
-				<small>{ paid }</small>
+				<small><NumberFormat value={paid} displayType={'text'} thousandSeparator={true} prefix={''} /></small>
 			</li>
 			<li className="list-group-item text-uppercase ftw-600">
 				<small className="text-dark ftw-600 ls-8">Total: </small>
-				<small>{ total }</small>
+				<small><NumberFormat value={total} displayType={'text'} thousandSeparator={true} prefix={''} /></small>
 			</li>
 		</ul>
 	)
